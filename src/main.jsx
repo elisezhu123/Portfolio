@@ -15,11 +15,14 @@ import './App.css';
 /* Import boxicons */
 import 'boxicons';
 
+/* Define the basename */
+const basename = '/Portfolio';
+
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        {/* Wrap the app in Redux Provider and BrowserRouter */}  
+      {/* Wrap the app in Redux Provider and BrowserRouter */}  
       <Provider store={store}>
-        <BrowserRouter basename='/Portfolio'>
+        <BrowserRouter basename={basename}>
           <App />
         </BrowserRouter>
       </Provider>
