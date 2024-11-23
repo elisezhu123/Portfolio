@@ -4,6 +4,11 @@ import React, {useEffect} from 'react';
 /* import CSS */
 import './Hero.css';
 
+/* import images */
+import heroImage1 from '../assets/img/bg/1.jpg';
+import heroImage2 from '../assets/img/bg/2.jpg';
+import heroImage3 from '../assets/img/bg/3.jpg';
+
 /* import hero function from Hero.js */
 import {hero} from './Hero.js';
 
@@ -21,7 +26,7 @@ const Hero = () => {
                 {/* hero section with 3 sliders*/}
                 <div className="list">
                     <div className='item active'>
-                        <div className="image" style={{"--bg": "url('./1.jpg')"}}></div>
+                        <div className="image" style={{ "--bg": `url(${heroImage1})` }}></div>
                         <div className="content">
                             <h2>Ling Xiao Zhu</h2>
                             <p>An interaction Designer</p>
@@ -32,7 +37,7 @@ const Hero = () => {
                     </div>
 
                     <div className='item'>
-                        <div className="image" style={{"--bg": "url('./2.jpg')"}}></div>
+                        <div className="image" style={{ "--bg": `url(${heroImage2})` }}></div>
                         <div className="content">
                             <h2>Ling Xiao Zhu</h2>
                             <p>An interaction Designer</p>
@@ -44,7 +49,7 @@ const Hero = () => {
                     </div>
 
                     <div className='item'>
-                        <div className="image" style={{"--bg": "url('./3.jpg')"}}></div>
+                        <div className="image" style={{ "--bg": `url(${heroImage3})` }}></div>
                         <div className="content">
                             <h2>Ling Xiao Zhu</h2>
                             <p>An interaction Designer</p>

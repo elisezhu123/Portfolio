@@ -3,7 +3,7 @@
     color: white;
     width: 100%;
     height: 200vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0.454)), url('./13.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0.454)), url('../assets/img/bg/13.jpg');
     background-size: cover;
     font-family: 'Ubuntu';
     overflow-x: hidden;

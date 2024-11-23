@@ -4,7 +4,7 @@
     width: 100%;
     padding: 0 4rem;
     height: 200vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.224),rgba(23, 22, 22, 0.837)) ,url('./10.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.224),rgba(23, 22, 22, 0.837)) ,url('../assets/img/bg/10.jpg');
     background-size: cover; 
     font-family: 'Ubuntu';
     font-size: 15px;
