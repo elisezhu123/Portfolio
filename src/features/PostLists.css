@@ -1,0 +1,64 @@
+/* PostLists CSS Styles */
+.comment{
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    display: grid;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1rem;
+    
+}
+
+.comment .container{
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.61);
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.8);
+}
+
+.comment .container h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.comment .post-credit{
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.comment .emoji button{
+    all: unset; 
+    cursor: pointer; 
+    display: inline; 
+    padding: 0 0.5rem;
+    border: none; 
+    background: none; 
+}
+
+/* Screen Sizes for Mobile devices */
+@media screen and (max-width: 480px) {
+    .comment{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .comment .container{
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .comment .container h2{
+        font-size: 12px;
+    }
+
+    .comment .post-credit{
+        font-size: 8px;
+    }
+}

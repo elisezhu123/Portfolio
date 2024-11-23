@@ -1,0 +1,808 @@
+/* Resume Page */
+.resume{
+    color: white;
+    width: 100%;
+    padding: 0 4rem;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.224),rgba(23, 22, 22, 0.837)) ,url('./10.jpg');
+    background-size: cover; 
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    overflow-x: hidden; /* hide horizontal scrollbar */
+}
+
+.resume .name{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: rgb(255 158 3)
+}
+
+/* row 1 */
+.row1{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    gap: 10px;
+}
+
+/* work experience */
+.resume .title{
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: rgb(255 158 3);
+}
+
+.resume .list{
+    display: grid;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.resume .row1 .list .item{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 30px;
+}
+
+.resume .row1 .year{
+    font-family: 'Bebas Neue';
+    border-radius: 20%;
+    padding: 25px 5px;
+    display: block;
+    font-size: 20px; 
+    color: #fece3e;
+}
+
+.resume .company{
+    color :#fece3e;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resume .list .item .content .job{
+    font-weight: bold;
+}
+
+/* introduction */
+.resume .intro{
+    font-family: 'Ubuntu';
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    gap: 30px;
+}
+
+.resume .avatar{
+    position: relative;
+    top: 0;
+}
+
+.resume .avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 10px solid #fece3e;
+    animation: borderMove 8s ease-in-out infinite alternate;
+}
+
+.intro .content{
+    width: 60%;
+    text-align: justify;
+}
+
+/* cx downolad button */
+.resume .intro button{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(255, 158, 3);
+    padding: 10px 20px;
+    border: none;
+    float: right;
+}
+
+.resume button:hover{
+    background-color: #f9ba27f6;
+}
+
+/* contacts */
+.resume .contacts li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.resume .contacts .link{
+    width: 300px;
+    border-top: 2px solid white;
+    padding-top: 1rem;
+}
+
+.resume .contacts .link li {
+    gap: 30px;
+}
+
+/* row 2 */
+.resume .row2{
+    padding: 2rem 0;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    text-align: center;
+    gap: 20px;
+}
+
+.resume .row2 img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.resume .row2 .bag,
+.resume .row2 .ipad{
+    width: 80%;
+}
+
+.resume .row2 div:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.resume .row2 div:nth-child(4){
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.resume .row2 div:nth-child(5) img,
+.resume .row2 div:nth-child(7) img{
+    width: 40%;
+}
+
+/* row 3 */
+.resume .row3{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    gap: 10px;
+}
+
+/* language */
+.resume .language div {
+    padding-bottom: 10px;
+}
+
+.resume .row3 .education{
+    margin: 0 auto;
+}
+
+.resume .row3 .list .item{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+}
+
+.resume .row3 .years{
+    font-family: 'Bebas Neue';
+    border-radius: 20%;
+    color: #fece3e;
+    padding: 10px 6px;
+    display: block;
+    font-size: 20px; 
+}
+
+/* skill */
+.resume .skill ul{
+    list-style: none;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 50px;
+}
+
+.resume .skill li{
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.resume .skill li div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fece3e;
+}
+
+.resume .skill li div::before{ 
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    content: ''; /* empty content */
+    background: white;
+    box-shadow: 0 0 5px rgb(255 158 3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.resume .skill li span{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    top: 28%;
+    left: 30%;
+    position: absolute;
+    width: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* lines connect to images */
+.resume .row1 .work::before,
+.resume .row1 .intro::before,
+.resume .row1 .contacts::before,
+.resume .row3 .language::before,
+.resume .row3 .education::before,
+.resume .row3 .skill::before{
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    content: '';
+}
+
+.resume .row1 .work::after,
+.resume .row1 .intro::after,
+.resume .row1 .contacts::after,
+.resume .row3 .language::after,
+.resume .row3 .education::after,
+.resume .row3 .skill::after{
+    position: absolute;
+    content: '';
+    border: 5px solid rgb(255 158 3);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fece3e;
+}
+
+/* variables for work */
+.resume .work{
+    position: relative;
+    --width: 140%;
+    --height: 20%;
+    --bottom: 125px;
+    --left: 180px;
+
+}
+
+/* two lines for work */
+.resume .row1 .work::before{
+    border-bottom: 2px solid rgb(255, 158, 3);
+    border-left: 2px solid rgb(255 158 3);
+    bottom: calc(-1 * var(--bottom));
+    left: calc(var(--left));
+}
+.resume .row1 .work::after{
+    bottom: calc(var(--height) - var(--bottom));
+    left: calc(var(--left) - 10px);
+}
+
+/* variables for intro */
+.resume .row1 .intro{
+    position: relative;
+    --width: 10%;
+    --height: calc(100% - 80px);
+    --top: 120px;
+    --right: -100px;
+}
+
+/* two lines for intro */
+.resume .row1 .intro::before{
+    border-top: 2px solid rgb(255 158 3);
+    border-right: 2px solid rgb(255 158 3);
+    top: calc(var(--top));
+    right: calc(-1 * var(--right));
+}
+
+.resume .row1 .intro::after{
+    top: calc(var(--top) - 10px);
+    right: calc(var(--width) - (var(--right) + 5px));
+}
+
+/* variables for contact */
+.resume .row1 .contacts{
+    position: relative;
+    --width: 80%;
+    --height: 80%;
+    --bottom: 300px;
+    --left: 90px;
+}
+
+/* two lines for contact */
+.resume .row1 .contacts::before{
+    border-bottom: 2px solid rgb(255 158 3);
+    border-right: 2px solid rgb(255 158 3);
+    bottom: calc(-1 * var(--bottom));
+    left: calc(-1 * var(--left));
+}
+
+.resume .row1 .contacts::after{
+    bottom: calc(var(--height) - var(--bottom));
+    left: calc(var(--width) - (var(--left) + 10px)); 
+}
+
+/* lines for langauge */
+.resume .language {
+    position: relative;
+    --width: 100%;
+    --height: 15%;
+    --top: -100px;
+    --left: 120px;
+}
+
+/* two lines for langauge */
+.resume .row3 .language::before{
+    border-top: 2px solid rgb(255, 158, 3);
+    border-left: 2px solid rgb(255 158 3);
+    top: calc(var(--top));
+    left: calc(var(--left));
+}
+
+.resume .row3 .language::after{
+    left: calc(var(--left) - 10px);
+    top: calc(var(--height) + var(--top));
+}
+
+
+/* lines for education */
+.resume .education{
+    position: relative;
+    --width: 20%;
+    --height: 65%;
+    --top: -100px;
+    --left: 80px;
+}
+
+/* two lines for education */
+.resume .row3 .education::before{
+    border-bottom: 2px solid rgb(255, 158, 3);
+    border-left: 2px solid rgb(255 158 3);
+    top: calc(var(--top));
+    left: calc(-1 * var(--left));
+}
+.resume .row3 .education::after{
+    left: calc(var(--width) - var(--left));
+    top: calc(var(--height) + var(--top) - 10px);
+}
+
+/* lines for skill */
+.resume .row3 .skill{
+    position: relative;
+    --width: 70%;
+    --height: 50%;
+    --top: -150px;
+    --left: 70px;
+}
+
+/* two lines for skill */
+.resume .row3 .skill::before{
+    border-top: 2px solid rgb(255, 158, 3);
+    border-right: 2px solid rgb(255, 158, 3);
+    top: calc(var(--top));
+    left: calc(-1 * var(--left));
+}
+
+.resume .row3 .skill::after{
+    left: calc(var(--width) - var(--left)  - 10px);
+    top: calc(var(--height) + var(--top));
+}
+
+/* Screen sizes for Desktop devices */
+@media all and (max-width: 1280px){  
+    /* row 1 */  
+    .resume{
+        padding: 0 4rem;
+        height: 240vh;
+    }
+    .row1{
+        grid-template-columns: 1fr 40% 1fr;
+    }
+    
+    .resume .row1 .year{
+        padding: 10px 3px;
+    }
+
+    .intro .content{
+        width: 70%;
+    }
+    
+    .resume .skill ul{
+        grid-template-columns: repeat(2, 100px);
+    }
+    
+    /* variables for each sections  */
+    .resume .work{
+        position: relative;
+        --width: 120%;
+        --height: 10%;
+        --bottom: 90px;
+        --left: 120px;
+    }
+
+    .resume .row1 .intro{
+        position: relative;
+        --width: 10%;
+        --height: calc(100% - 80px);
+        --top: 120px;
+        --right: -20px;
+        
+    }
+
+    .resume .row1 .contacts{
+        position: relative;
+        --width: 70%;
+        --height: 70%;
+        --bottom: 230px;
+        --left: 20px;
+    } 
+
+    .resume .language {
+        position: relative;
+        --width: 100%;
+        --height: 10%;
+        --top: -100px;
+        --left: 120px;
+    }
+    
+    .resume .education{
+        position: relative;
+        --width: 5%;
+        --height: 45%;
+        --top: -100px;
+        --left: 50px;
+    }
+
+    .resume .row3 .skill{
+        position: relative;
+        --width: 75%;
+        --height: 35%;
+        --top: -120px;
+        --left: 70px;
+    }
+}
+
+/* Screen sizes for Tablet devices */
+@media all and (max-width: 768px){
+    .resume{
+        padding: 0 6rem;
+        height: 330vh;
+    }
+    
+    .resume .name{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 5rem;
+    }
+    
+    .row1{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        line-height: 1.5em;
+    }
+
+    .resume .title{
+        margin: 2rem 0;
+    }
+
+    .resume .row1 .year{
+        padding: 20px 5px;
+    }
+
+    .intro .content{
+        width: 100%;
+    }
+
+    .resume .contacts li{
+        margin-bottom: 10px;
+    }
+    
+    .resume .contacts .link{
+        padding-top: 1rem;
+    }
+    
+    .resume .row2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .resume .row3{
+        grid-template-columns: 1fr;
+    }
+    
+    .resume .row3 .education{
+        margin: 2rem 0 0 0;
+        line-height: 1.5em;
+    }
+
+    .resume .row3 .list .item{
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 30px;
+    }
+
+    .resume .row3 .years{
+        padding: 15px 15px;
+    }
+
+    .resume .skill ul{
+        padding-left: 0.5rem;
+        grid-template-columns: repeat(3, 100px);
+        gap: 30px;
+    }
+    
+    /* no lines */
+    .resume .row3 .language::before,
+    .resume .row3 .skill::before,
+    .resume .row3 .education::before,
+    .resume .row1 .intro::before,
+    .resume .row1 .work::before,
+    .resume .row1 .contacts::before{
+       display: none;
+    }
+    
+    .resume .row3 .language::after,
+    .resume .row3 .skill::after,
+    .resume .row3 .education::after,
+    .resume .row1 .intro::after,
+    .resume .row1 .work::after,
+    .resume .row1 .contacts::after{
+       display: none;
+    }
+    
+    /* no lines for work */
+    
+    .resume .row1 .work::before{
+        display: none;
+    }
+
+    .resume .row1 .work::after{
+        display: none;
+    }
+
+
+    /* no lines for intro */
+    .resume .row1 .intro::before{
+        display: none;
+    }
+    
+    .resume .row1 .intro::after{
+        display: none;
+    }
+    
+    /* no lines for contact */   
+    .resume .row1 .contacts::before{
+        display: none;
+    }
+    
+    .resume .row1 .contacts::after{
+        display: none;
+    }
+
+    /* no lines for langauge */
+    
+    .resume .row3 .language::before{
+        display: none;
+    }
+    
+    .resume .row3 .language::after{
+        display: none;
+    }
+    
+    /* no lines for education */ 
+    .resume .row3 .education::before{
+        display: none;
+    }
+    .resume .row3 .education::after{
+        display: none;
+    }
+
+    /* no lines for skill */ 
+    
+    .resume .row3 .skill::before{
+        display: none;
+    }
+    
+    .resume .row3 .skill::after{
+        display: none;
+    }  
+}
+
+
+/* Screen sizes for Mobile devices */
+@media all and (max-width: 480px){
+    .resume{
+        padding: 0 1rem;
+        font-size: 10px;
+        height: 300vh;
+    }
+    
+    .resume .name{
+        margin: 2rem 0 0 0;
+        font-size: 2rem;
+    }
+    
+    .row1{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .resume .title{
+        font-size: 20px;
+    }
+
+    .resume .list{
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .resume .row1 .year{
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+
+    .resume .company{
+        font-size: 12px;
+    }
+    
+    .intro .content{
+        font-size: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .resume .intro button{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .resume .row2{
+        grid-template-columns: 1fr;
+    }
+
+    .resume .row3{
+        grid-template-columns: 1fr;
+    }
+
+    .resume .row3 .education{
+        margin-top: 1rem;
+    }
+
+    .resume .contacts li{
+        margin-bottom: 5px;
+    }
+    
+    .resume .contacts .link{
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+    
+    .resume .row2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .resume .row3{
+        grid-template-columns: 1fr;
+    }
+    
+    .resume .row3 .education{
+        margin: 0.5rem 0;
+    }
+
+    .resume .row3 .years{
+        padding: 5px 30px;
+        font-size: 15px; 
+    }
+
+    .resume .skill ul{
+        padding-left: 0.5rem;
+        grid-template-columns: repeat(3, 80px);
+        gap: 30px;
+    }
+    
+    .resume .skill li{
+        height: 80px;
+    }
+    
+    .resume .skill li span{
+        font-size: 15px;
+        top: 28%;
+        left: 26%;
+    }
+    
+    /* no lines */
+    .resume .row3 .language::before,
+    .resume .row3 .skill::before,
+    .resume .row3 .education::before,
+    .resume .row1 .intro::before,
+    .resume .row1 .work::before,
+    .resume .row1 .contacts::before{
+       display: none;
+    }
+    
+    .resume .row3 .language::after,
+    .resume .row3 .skill::after,
+    .resume .row3 .education::after,
+    .resume .row1 .intro::after,
+    .resume .row1 .work::after,
+    .resume .row1 .contacts::after{
+       display: none;
+    }
+    
+    /* no lines for work */
+    .resume .row1 .work::before{
+        display: none;
+    }
+    .resume .row1 .work::after{
+            display: none;
+    }
+    
+    /* no lines for intro */
+    .resume .row1 .intro::before{
+        display: none;
+    }
+    
+    .resume .row1 .intro::after{
+        display: none;
+    }
+    
+    /* no lines for contact */   
+    .resume .row1 .contacts::before{
+        display: none;
+    }
+        
+    .resume .row1 .contacts::after{
+        display: none;
+    }
+
+    /* no lines for langauge */
+    
+    .resume .row3 .language::before{
+        display: none;
+    }
+    
+    .resume .row3 .language::after{
+        display: none;
+    }
+    
+    /* no lines for education */ 
+    .resume .row3 .education::before{
+        display: none;
+    }
+    .resume .row3 .education::after{
+        display: none;
+    }
+
+    /* no lines for skill */ 
+    
+    .resume .row3 .skill::before{
+        display: none;
+    }
+    
+    .resume .row3 .skill::after{
+        display: none;
+    }  
+}

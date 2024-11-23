@@ -1,0 +1,288 @@
+/* Project Quick View section */
+.project-overview{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)),url('./9.jpg');
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden; /* hide the overflow */
+}
+
+.project-overview::before{
+    content: '';
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)), url('./8.jpg');
+    background-size: cover;
+}
+
+.project-overview .title{
+    position: relative;
+    font-family: 'Bebas Neue'; 
+    text-transform: uppercase;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 8rem;
+    line-height: 1em;
+}
+
+.project-overview .content{
+    color: white;
+    margin: 0;
+    padding-left: 4rem;
+    padding-right: 4.5rem;
+    width: 100%;
+}
+
+.project-overview .content h1{
+    font-family:'Ubuntu';
+    color: rgb(255, 158, 3);
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.project-overview .content .text{
+    font-family: 'Ubuntu';
+    text-align: justify;
+}
+
+.project-overview .content .text p{
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.project-overview .content .items button{
+    margin: 1rem 0;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(255, 158, 3);
+    padding: 10px 20px;
+    float: right;
+    border: none;
+}
+
+.project-overview .content .items button a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.project-overview .content button:hover{
+    background-color: #f9ba27f6;
+}
+
+.project-overview .content .items{
+    display: none;
+}
+
+.project-overview .content .items.active{
+    display: block;
+}
+
+/* Display the content with animation*/
+.project-overview .content .items.items.active h1{
+    opacity: 0;
+    animation: DisplayContent 1s ease-in-out 1 forwards;
+}
+
+.project-overview .content .items.items.active .text{
+    opacity: 0;
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards;
+}
+
+.project-overview .content .items.items.active button{
+    opacity: 0;
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards;
+}
+
+.project-overview .images{
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(var(--rotate));
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    z-index: -2;
+}
+
+.project-overview .images .pro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    rotate: calc(60deg * var(--i));
+}
+
+.project-overview .images .pro img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    background-color: rgba(246, 246, 246, 0.095);
+    border: 2px solid rgba(255, 158, 3);
+    box-shadow: 0px 0px 10px #fece3e;;
+    border-radius: 50%;
+}
+
+.project-overview .rotation{
+    position: absolute;
+    border: none;
+    top: 87.5%;
+    width: 10%;
+    left: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-overview .rotation button{
+    all: unset;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes DisplayContent {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Screen sizes for Desktop devices */
+@media all and (max-width: 1280px) {
+    .project-overview .title{
+        padding-bottom: 10px;
+        font-size: 5rem;
+        padding-top: 3rem;
+    }
+    
+    .project-overview .content h1{
+        padding: 1rem 0;
+    }
+
+    .project-overview .images{
+        width: 850px;
+        height: 850px;
+        left: 50%;
+        outline-offset: -120px;
+    }
+
+    .project-overview .images .pro img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .project-overview .rotation{
+        top: 87.5%;
+        width: 120px;
+        left: 45.5%;
+    }
+}
+
+/* Screen sizes for Tablets*/
+@media all and (max-width: 768px) {
+    .project-overview .title{
+        font-size: 5rem;
+        padding-top: 3rem;
+    }
+
+    .project-overview .content{
+        padding: 0 2rem;
+    }
+    
+    .project-overview .content h1{
+        width: 400px;
+    }
+
+    .project-overview .content .items button{
+        margin-top: 1rem;
+    }
+
+    .project-overview .images{
+        width: 850px;
+        height: 850px;
+        left: 50%;
+    }
+
+    .project-overview .images .pro img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .project-overview .rotation{
+        top: 46%;
+        width: 120px;
+        left: 42.5%;
+    }
+}
+
+/* Screen sizes for Mobile devices */
+@media all and (max-width: 480px) {  
+    .project-overview{
+        height: 90vh;
+    }
+
+    .project-overview .title{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .project-overview .content{
+        padding: 0 1rem;
+    }
+    
+    .project-overview .content h1{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    .project-overview .content .text p{
+        font-size: 10px;
+    }
+    
+    .project-overview .content .items button{
+        margin-top: 5px;
+        padding: 5px 10px;
+    }
+    
+    .project-overview .content .items button a{
+        font-size: 10px;
+    }
+    
+    .project-overview .images{
+        width: 300px;
+        height: 300px;
+        left: 50%;
+    }
+
+    .project-overview .images{
+        width: 800px;
+        height: 800px;
+        left: 50%;
+    }
+
+    .project-overview .images .pro img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .project-overview .rotation{
+        top: 85%;
+        width: 120px;
+        left: 35%;
+    }
+}

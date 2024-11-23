@@ -1,0 +1,175 @@
+/* Blog Page */
+.blog{
+    color: white;
+    width: 100%;
+    padding: 0 4rem;
+    height: 240vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(61, 61, 61, 0.977)), url('./14.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Ubuntu';
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.blog .name{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.blog .filter{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog .filter-item{
+    display: flex;
+    margin: 0 1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blog .filter-item.active{
+    border-radius: 10px;
+    background-color: rgb(255, 158, 3);
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    justify-content: center;
+    gap: 1rem;
+}
+
+.blog .post{
+    background: rgba(17, 17, 17, 0.61);
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    height: auto;
+}
+
+.blog .post img{
+    width: 100%;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog .category{
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-top: 10px;
+    font-weight: 100;
+    color: rgb(255, 158, 3);
+    border-radius: 10px;
+}
+
+.blog .post .title{
+    display: flex;
+    margin-top: 0.5rem;
+    font-size: 20px;
+}
+
+.blog .post .date{
+    display: flex;
+    padding: 10px 0;
+    font-size: 12px;  
+}
+
+.blog .brief{
+    line-height: 1.5em;
+}
+
+.blog .post .read-more{
+    text-decoration: none;
+    text-align: right;
+    font-size: 12px;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog .post .read-more:hover{
+    color: rgb(255, 158, 3);
+}
+
+/* Screen Sizes for Desktop devices */
+@media (max-width: 1280px) {
+    .blog{
+        height: 180vh;
+    }
+}
+
+/* Screen Sizes for Tablets */
+@media (max-width: 768px) {
+    .blog{
+        height: 230vh;
+        padding: 0 2rem;
+    }
+
+    .blog .name{
+        font-size: 5rem;
+        margin-top: 3rem;
+    }
+}
+
+/* Screen Sizes for Mobile devices */
+@media (max-width: 480px) {
+    .blog{
+        height: 435vh;
+        padding: 0 1rem;
+        font-size: 10px;
+    }
+
+    .blog .name{
+        font-size: 2rem;
+        margin-top: 2rem;
+    } 
+
+    .blog .filter{
+        margin: 1rem 0;
+    }
+
+    .blog .filter-item{
+        font-size: 12px;
+    }
+
+    .blog .filter-item.active{
+        border: 1px solid white;
+        padding: 5px 10px;
+    }
+
+    .blog .post .title{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .blog .post .date{
+        padding: 5px 0;
+        font-size: 8px;  
+    }
+
+    .blog .post .read-more{
+        font-size: 9px;
+    }
+}
+
+
+
+    

@@ -1,0 +1,260 @@
+/* About Page */
+.about{
+    color: white;
+    width: 100%;
+    padding: 0 4rem;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.754)), url('./12.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Ubuntu';
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.about .name{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.about-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left{
+    width: 30%;
+}
+
+.about-left img{
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.about-right{
+    width: 70%;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.about-right .data{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2rem 0;
+}
+
+.about-right ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.about-right ul li span{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-right ul li span p{
+    padding: 0 1rem;
+}
+
+.about-right .list span{
+    justify-content: center;
+    border: none;
+    color: rgb(225, 158, 3);
+}
+
+.about-right .skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0.5rem;
+}
+
+.about-right .info{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.about-right .bar{
+    width: 100%;
+    height: 5px;
+    background-color: rgba(225, 158, 3, 0.08);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.bar span{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(225, 158, 3);
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+}
+
+.bar1{
+    width: 70%;
+    animation: grow1 4s forwards; 
+}
+
+.bar2{
+    width: 50%;
+    animation: grow2 4s forwards;
+}
+
+.bar3{
+    width: 80%;
+    animation: grow3 4s forwards;
+}
+
+.bar4{
+    width: 90%;
+    animation: grow4 4s forwards;
+}
+
+.bar5{
+    width: 60%;
+    animation: grow5 4s forwards;
+}
+
+/* Animation for 5 progressing bars*/
+@keyframes grow1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes grow2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes grow3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes grow4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes grow5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+/* screen sizes for Desktops */
+@media screen and (max-width: 1280px) {
+    .about{
+        height: 110vh;
+    }
+
+    .about-left img{
+        height: 550px;
+    }
+}
+
+/* screen sizes for Tablets */
+@media screen and (max-width: 768px) {
+    .about{
+        height: 100vh;
+        padding: 0 2rem;
+    }
+
+    .about .name{
+        margin-top: 3rem;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-left {
+        width: 35%;
+        
+    }
+    .about-left img{
+        height: 650px;
+    }
+    
+    .about-right .data{
+        margin: 10px 0;
+    }
+
+    .about-right .skills{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1px;
+        grid-column-gap: 10px;
+    }
+}
+
+/* screen sizes for Mobiles */
+@media screen and (max-width: 480px) {
+    .about{
+        height: 100vh;
+        padding: 0 1rem;
+        font-size: 10px;
+    }
+
+    .about .name{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .about-left {
+        width: 30%;  
+    }
+
+    .about-left img{
+        height: 550px;
+        object-position: 65%;
+    }
+    
+    .about-right .data{
+        margin: 5px 0;
+        font-size: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-right .skills{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0px;
+        grid-column-gap: 20px;
+    }
+}
+
+

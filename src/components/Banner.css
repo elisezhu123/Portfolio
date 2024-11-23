@@ -1,0 +1,159 @@
+.banner{
+    background-color: rgba(16, 16, 16, 0.436);
+    mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0) 10% 90%, transparent);
+    color: white;
+    width: 100%;
+    height: 38vh;
+    margin-top: 0px;
+
+    /* variables for banner */
+    --banner_width: 100px;
+    --banner_widths: 400px;
+    --banner_height: 80px;
+    --banner_heights: 200px;
+    --banner_item: 15;
+    --banner_items: 7;
+}
+
+/* slider */
+.banner .slider1{
+    font-family: "Ubuntu";;
+    width: 100%;
+    height: var(--banner_height);
+    object-fit: cover;
+}
+
+.banner .slider2{
+    width: 100%;
+    height: var(--banner_heights);
+    object-fit: cover;
+
+}
+
+.banner .slider1 .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--banner_width) * var(--banner_item));
+    position: relative;
+}
+
+.banner .slider2 .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--banner_widths) * var(--banner_items));
+    position: relative;
+}
+
+.banner .slider1 .list .item{
+    margin-top: 2rem;
+    width: var(--banner_width);
+    height: var(--banner_height);  
+    position: absolute;
+    left: 100%;
+    text-align: center;
+    animation: autoRun 10s linear infinite;  /* The repeated animation will run for 10 seconds */
+    animation-delay: calc((10s / var(--banner_item, 5)) * (var(--position, 1) - 1)) !important;
+    transition: filter 0.5s; /* The filter property will change over the course of 0.5 seconds */
+}
+
+.banner .slider2 .list .reverse{
+    margin-top: 2rem;
+    width: var(--banner_widths);
+    height: var(--banner_heights);  
+    position: absolute;
+    right: 100%;
+    text-align: center;
+    animation: reverseAutoRun 20s linear infinite; /* The reverse repeated animation will run for 20 seconds */
+    animation-delay: calc((20s / var(--banner_items, 5)) * (var(--position, 1) - 1)) !important;
+    transition: filter 0.5s; /* The filter property will change over the course of 0.5 seconds */
+}
+
+.banner .slider1:hover .list .item{
+    animation-play-state: paused!important; /* The animation stoped when I hover the mouse */
+    filter: grayscale(1); /* The grayscale filter will be applied to the image */
+}  
+
+.banner .slider2:hover .list .item{
+    animation-play-state: paused!important; /* The animation stoped when I hover the mouse */
+    filter: grayscale(1); /* The grayscale filter will be applied to the image */
+}  
+
+.banner .slider1 .list .item:hover{
+    filter: grayscale(0); /* The grayscale filter will be removed when I hover the mouse */
+}
+
+.banner .slider2 .list .item:hover{
+    filter: grayscale(0);  /* The grayscale filter will be removed when I hover the mouse */
+}
+
+.banner .slider1 .list .item p{
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .slider2 .list .item p{
+    position: relative;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* animation */
+@keyframes autoRun {
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--banner_width) * -1);
+    }
+}
+
+/* reverse animation */
+@keyframes reverseAutoRun {
+    from {
+        left: calc(var(--banner_widths) * -1);
+    }to{
+        left: 100%;
+    }
+}
+
+/* Screen sizes for Desktop devices*/
+@media all and (max-width: 1280px) {
+    .banner{
+        height: 45vh;
+    }
+}
+
+/* Screen sizes for Tablets*/
+@media all and (max-width: 768px) {
+    .banner{
+        --banner_height: 80px;
+        height: 42vh;
+    }
+    .banner .slider1 .list .item p{
+        margin-top: 10px;
+    }
+}
+
+/* Screen size for Mobile devices */
+@media all and (max-width: 480px) {  
+    .banner{
+        --banner_widths: 200px;
+        --banner_height: 40px;
+        --banner_heights: 100px;
+        height: 25vh;
+    }
+    .banner .reverse img{
+        width: 200px;
+        height: 100px;
+    }
+    .banner .slider1 .list .item{
+        margin-top: 1rem;
+    }
+    .banner .slider1 .list .item p{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}

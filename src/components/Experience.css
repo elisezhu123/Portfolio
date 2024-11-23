@@ -1,0 +1,221 @@
+/* Experience section */
+.experience{
+    color: white;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.845), rgba(255, 255, 255, 0)), url('./6.jpg');
+    background-size: cover;
+}
+
+.experience .title h2{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.experience .timeline{
+    font-family: "Ubuntu";
+    width: calc(90% - 2rem);
+    height: 81vh;
+    margin: 0 auto;
+}
+
+.experience .timeline::after{
+    position: absolute;
+    content : '';
+    z-index: 1;
+    width: 2px;
+    height: 60vh;
+    background-color: #ffffff84;
+    top: 27vh;
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards; /* animation for the conetent */
+}
+
+.experience .timeline ul{
+    list-style-type: none;
+}
+
+.experience .timeline ul li{
+    width: 50%;
+    background-color: rgba(105, 105, 105, 0.393);
+    box-shadow: 0 0 10px rgb(198, 198, 198);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0; 
+    position: relative;
+    z-index: 2; 
+      
+}
+
+/* float the odd timeline card to left*/
+.experience .timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    text-align: right; 
+}
+
+/* float the even timeline card to right*/
+.experience .timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(30px); 
+}
+
+/* remove the margin bottom for the last 3rd card */
+.experience .timeline ul li:nth-last-child(3){
+    margin-bottom: 0;
+}
+
+.experience li h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards;
+}
+
+.experience li p{
+    font-size: 15px;
+    line-height: 1.5em;
+    opacity: 0.5;
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards;
+}
+
+.experience li p:hover{
+    opacity: 1;
+}
+
+.experience li .date{
+    position: absolute;
+    top: -45px;
+    width: 220px;
+    border-radius: 8px;
+    background-color: rgb(255, 158, 3);
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(196, 196, 196);
+    animation: DisplayContent 1s 0.5s ease-in-out 1 forwards; /* animation for the conetent */
+}
+
+/* position of the date */
+.experience li:nth-child(odd) .date{
+    right: 5px;
+}
+
+.experience li:nth-child(even) .date{
+    left: 5px;
+} 
+
+/* circle for the timeline */
+.experience li .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 158, 3);
+    position: absolute;
+    top: -30px;
+    border: 5px solid white;
+    animation: none;
+}
+
+/* position of the circle */
+.experience li:nth-child(odd) .circle{
+    right: -51px;
+    transform: translate(-50%, -50%);
+}
+
+.experience li:nth-child(even) .circle{
+    left: -29px;
+    transform: translate(-50%, -50%);
+}
+
+/* Screen sizes for Desktop devices */
+@media all and (max-width: 1280px) {   
+    .experience{
+        padding: 0 1rem;
+        height: 100vh;
+    }
+
+    .experience{
+        height: 140vh;
+    }
+
+    .experience .title h2{
+        font-size: 8rem;
+    }
+    
+    .experience .timeline::after{
+        top: 36vh;
+        height: 80vh
+    }
+}
+
+/* Screen sizes for Tablets */
+@media all and (max-width: 768px) {   
+    .experience{
+        padding: 0 1rem;
+        height: 100vh;
+    } 
+    
+    .experience .title h2{
+        font-size: 5rem;
+        padding-top: 3rem;
+    }
+
+    .experience .timeline::after{
+        top: 20vh;
+        height: 75vh;
+    }
+
+    .experience li .date{
+        top: -35px;
+        height: 25px;
+        width: 160px;
+        border-radius: 8px;
+    }
+}
+
+/* Screen sizes for Mobile devices */
+@media all and (max-width: 480px) {  
+    .experience{
+        padding: 0 1rem;
+        height: 100vh;
+    }
+
+    .experience .title h2{
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .experience .timeline::after{
+        top: 15vh;
+        height: 75vh;
+    }
+
+    .experience .timeline ul li{
+        padding: 10px;
+    }
+
+    .experience li h3{
+        font-size: 12px;
+    }
+
+    .experience li p{
+        font-size: 10px;
+    }
+
+    .experience li .date{
+        top: -30px;
+        width: 120px;
+        border-radius: 6px;
+        height: 20px;
+        font-size: 10px;
+    }
+}

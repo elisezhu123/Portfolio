@@ -1,0 +1,279 @@
+/* Hero section */
+.hero{
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .list .item{
+    position:absolute;
+    inset: 0 0 0 0; /* same-size with slide-frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .list .item .content{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 20px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 300px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 0 80px rgba(13, 17, 36, 0.767);
+}
+
+.hero .list .item .content h2{
+    font-family: 'Gord';
+    font-size: 10rem;
+    line-height: 1em;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.hero .list .item .content p:last-child{
+    display: flex;
+    align-items: end;
+    padding-bottom: 25px;
+}
+
+/* image shrink with the calculated responsive sizes of the full screen */
+.hero .list .image{
+    flex-shrink: 0;
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+    background-image: var(--bg);
+    background-position: center;
+    background-size: var(--diameter) var(--diameter);
+    position: relative;
+}
+
+.hero .list .item .image::before,
+.hero .list .item .image::after{
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    content: '';
+    top: 50%;
+    left: 50%;
+    background-image: url('./4.jpg');
+    opacity: 0.8;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-position: center;
+    animation: borderMove 8s ease-in-out infinite alternate;
+}
+
+.hero .list .item .image::after{
+    width: 30%;
+    height: 30%;
+    background-image: url('./5.jpg');
+    background-size: contain;
+}
+
+/* slider animation */
+/* before state: items are not active */
+.hero .list .content h2{
+    transform: translateY(-30%);
+    transition: transform 1s;
+}
+
+.hero .list .content p{
+    transform: translateY(50%);
+    transition: transform 1s;
+}
+
+.hero .list .item .image{
+    transform: rotate(-60deg);
+    transition: 1s;
+}
+
+.hero .list .item .image::before{
+    transform: translate(-50%, -50%) rotate(-120deg);
+    transition: transform 1;
+}
+    
+.hero .list .item .image::after{
+    transform: translate(-50%, -50%) rotate(-170deg);
+    transition: transform 1s;
+}
+
+.hero .list .item{
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* item active */
+.hero .list .item.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hero .list .item.active .content{
+    transform: translateY(0);
+}
+
+.hero .list .item.active .image{
+    transform: rotate(30deg);
+}
+
+.hero .list .item.active .image::before,
+.hero .list .item.active .image::after{
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+/* after state: items after active items */
+.hero .list .item.active ~ .item{
+    opacity: 0;
+}
+
+.hero .list .item.active ~ .item .content h2{
+    transform: translateY(100%);
+}
+
+.hero .list .item.active ~ .item .image{
+    transform: rotate(60deg);
+}
+
+.hero .list .item.active ~ .item .image::before{ 
+    transform: translate(-50%, -50%) rotate(120deg); 
+}
+
+.hero .list .item.active ~ .item .image::after{
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.hero .list .item.active ~ .item .content h2{
+    transform: translateY(100%);
+}
+
+/* slider navigation in arrows */
+.chevrons{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.chevrons button{
+    all: unset;
+    cursor: pointer;
+}
+
+/* define something in the javascript file */
+.chevrons button.d-none{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* selfie on the front */
+.hero .list::after{
+    position: absolute;
+    content: "";
+    bottom: -240px;
+    left: 46%;
+    transform: translateX(-50%);
+    width: min(1000px, 100vw);
+    background-image: url('../assets/img/selfie.png');
+    height: 185%;
+    background-size : cover;
+    background-position: top;
+    pointer-events: none;
+    animation: ZoomMode 1s ease-in-out 1 forwards;
+}
+
+
+/* slider animation */
+
+/* zoom in animation */
+@keyframes ZoomMode{
+    from{
+        transform: translateX(-50%) scale(1.5) translateY(90px);
+    }
+}
+
+/* image border animation */
+@keyframes borderMove {
+    0%{
+        border-radius: 50% 40% 30% 70% / 40% 30% 7% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 40% 70%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* Screen sizes for Desktop devices*/
+@media all and (max-width: 1280px) {
+    .hero .list .item .content{
+        grid-template-columns: repeat(2, 450px);
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero .list .item .content h2{
+        font-size: 5em;
+    }
+}
+
+/* Screen sizes for Tablets*/
+@media all and (max-width: 768px) {
+    .hero .list .item .content{
+        grid-template-columns: repeat(1, 500px);
+        left: 10%;
+        top: 150px;
+        gap: 10px;
+    }
+
+    .hero .list .item .content h2{
+        font-size: 5em;
+    }
+    
+    .chevrons{
+        width: 500px;
+        left: 50%;
+    }
+
+    .hero .list::after{
+        left: 50%;
+    }
+}
+
+/* Screen sizes for Mobile devices */
+@media all and (max-width: 480px) {     
+    .hero .list .item .content{
+        grid-template-columns: repeat(1, 360px);
+        justify-content: center;
+        left: 1rem;
+        top: 2rem;
+        gap: 10px;
+    }
+
+    .hero .list .item .content h2{
+        font-size: 3rem;
+    }
+
+    .hero .list .item .content p{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .chevrons{
+        width: 300px;
+        left: 50%;
+    }
+}
