@@ -290,7 +290,7 @@ footer form button{
 
   /* footer */
   footer{
-    height: 60vh;
+    height: auto;
   }
 
   footer img{
@@ -298,7 +298,7 @@ footer form button{
   }
 
   .col{
-    flex-basis: 45.5%;
+    flex-basis: 40.5%;
     padding: 1rem;
     margin: 0px;
     font-size: 10px;

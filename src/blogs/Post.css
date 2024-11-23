@@ -4,7 +4,7 @@
     width: 100%;
     padding: 4rem;
     height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.632),rgba(0, 0, 0, 0.977)), url('./5.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.632),rgba(0, 0, 0, 0.977)), url('/5.jpg');
     background-size: cover;
     box-sizing: border-box;
     font-size: 15px;

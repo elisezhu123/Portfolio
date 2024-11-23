@@ -39,7 +39,7 @@ function App() {
 
         {/* logo */}
         <figure className="logo">
-          <Link to="/Portfolio" ><img src={logo} alt="logo" /></Link>
+          <Link to="/" ><img src={logo} alt="logo" /></Link>
         </figure>
 
         {/* checkbox */}
@@ -63,7 +63,7 @@ function App() {
       {/* homepage */}
       <main>
         <Routes>
-          <Route path="/Portfolio" element={<>
+          <Route path="/" element={<>
             <Hero />
             <Banner />
             <Experience />

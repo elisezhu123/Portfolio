@@ -4,7 +4,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)),url('../assets/img/bg/9.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)),url('/9.jpg');
     background-size: cover;
     z-index: 1;
     overflow: hidden; /* hide the overflow */
@@ -18,7 +18,7 @@
     left: 0;
     width: 50%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)), url('../assets/img/bg/8.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0)), url('/8.jpg');
     background-size: cover;
 }
 

@@ -5,9 +5,9 @@ import React, {useEffect} from 'react';
 import './Hero.css';
 
 /* import images */
-import heroImage1 from '../assets/img/bg/1.jpg';
-import heroImage2 from '../assets/img/bg/2.jpg';
-import heroImage3 from '../assets/img/bg/3.jpg';
+import heroImage1 from '/1.jpg';
+import heroImage2 from '/2.jpg';
+import heroImage3 from '/3.jpg';
 
 /* import hero function from Hero.js */
 import {hero} from './Hero.js';

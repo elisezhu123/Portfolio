@@ -158,6 +158,11 @@ const Gallery = () => {
           {/* Video lists in the right */}
           <div className="video-list">
             <div className="vid active">
+              <h4 className='video-title'> Video 1: The Fox in the Fireflies Forest</h4>
+              <video src={video1} alt="video1" controls muted></video>
+            </div>
+
+            <div className="vid">
               <h4 className='video-title'>Video 2: Metaverse</h4>
               <video src={video2} alt="video2" controls muted></video>
             </div>
