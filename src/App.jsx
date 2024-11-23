@@ -32,6 +32,9 @@ import Post5 from './blogs/Post-5.jsx';
 import 'boxicons';
 
 function App() {
+
+  const basename = '/Portfolio'; // GitHub Pages directory
+  
   return (
     <>
     {/* navigation bar */}
