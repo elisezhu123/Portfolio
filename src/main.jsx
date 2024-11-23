@@ -15,13 +15,11 @@ import './App.css';
 /* Import boxicons */
 import 'boxicons';
 
-const basename = '/Portfolio'; // GitHub Pages directory
-
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         {/* Wrap the app in Redux Provider and BrowserRouter */}  
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename='/Portfolio'>
           <App />
         </BrowserRouter>
       </Provider>
