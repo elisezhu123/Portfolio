@@ -110,6 +110,7 @@ footer{
   overflow-x: hidden;
   font-size: 15px;
   line-height: 20px;
+  overflow-x: hidden;
 }
 
 footer img{
@@ -298,7 +299,7 @@ footer form button{
   }
 
   .col{
-    flex-basis: 40.5%;
+    flex-basis: 40%;
     padding: 1rem;
     margin: 0px;
     font-size: 10px;
@@ -332,7 +333,7 @@ footer form button{
   }
   
   footer .col form input{
-    padding: 5px 12px;
+    padding: 1px;
     font-size: 10px;
   }
 
