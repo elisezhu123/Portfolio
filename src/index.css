@@ -2,10 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  font-size: 15px;
   background-image: linear-gradient(to right, rgb(0, 0, 0),rgba(0, 0, 0, 0.616));
-  background-repeat: no-repeat;
-  background-size: cover; /* 确保背景填充 */
   overflow-x: hidden; /* hide horizontal scrollbar */
 }
 
@@ -16,11 +13,19 @@ body {
 }
 
 :root{
+  margin: 0;
+  padding: 0;
  /* varible scale */
   --width-df: min(300px, 90vw);
   /* varible hero */
   --diameter: 500px;
   --rotate: 0;
+  overflow-x: hidden; /* hide horizontal scrollbar */
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 /* font */

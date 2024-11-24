@@ -255,9 +255,6 @@
 
 /* Screen sizes for Mobile devices */
 @media all and (max-width: 480px) {   
-    .hero{
-        overflow-x: hidden;
-    }
     .hero .list .item .content{
         grid-template-columns: repeat(1, 360px);
         justify-content: center;
