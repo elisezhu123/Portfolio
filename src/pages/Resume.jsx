@@ -39,8 +39,8 @@ function Resume() {
                                     Web Designer
                                 </div>
                                 <div className="achivements">
-                                    - Self-built AIGC local servers for ComfyUI and Stable Diffusion<br />
-                                    - Made a Python-based ComfyUI plugin
+                                    - Apply interactive animation effects to webpages.<br />
+                                    
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,8 @@ function Resume() {
                                     UI Graphic & Animation Designer
                                 </div>
                                 <div className="achivements">
-                                   - Apply interactive animation effects to webpages.<br />
+                                    - Self-built AIGC local servers for ComfyUI and Stable Diffusion<br />
+                                    - Made a Python-based ComfyUI plugin
                                 </div>
                             </div>
                         </div>
@@ -180,7 +181,7 @@ function Resume() {
                 </div>
             </div>
 
-            {/* row3 of language, education and skill */}
+            {/* row3 of language, education and skills */}
             <div className="row3">
                 {/* language */}
                 <div className="language">
@@ -207,7 +208,7 @@ function Resume() {
                             <div className="content">
                                 <div className="company">University of British Columbia</div>
                                 <div className="job">
-                                    Banelor Degree
+                                    Bachelor Degree
                                 </div>
                                 <div className="describe">
                                     Major in Visual Arts
@@ -232,7 +233,7 @@ function Resume() {
 
                 {/* 6 skills */}
                 <div className="skill">
-                    <div className="title">SKILL</div>
+                    <div className="title">SKILLS</div>
                     <ul>
                         <li>
                             <div></div>
