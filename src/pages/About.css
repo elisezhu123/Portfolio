@@ -178,6 +178,16 @@
         width: 60%;
     }
 }
+/* Screen sizes for 17inch devices */
+@media all and (max-width: 1366px) {
+    .about{
+        height: 105vh;
+    }
+    .about .name{
+        margin-bottom: 10px;
+        margin-top: 3rem;
+    }
+}
 
 /* screen sizes for Desktops */
 @media screen and (max-width: 1280px) {

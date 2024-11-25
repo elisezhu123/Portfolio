@@ -3,13 +3,13 @@
     color: white;
     width: 100%;
     padding: 0 4rem;
-    height: 240vh;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(61, 61, 61, 0.977)), url('/14.jpg');
     background-size: cover;
     box-sizing: border-box;
     font-size: 15px;
     font-family: 'Ubuntu';
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow: hidden; /* Hide horizontal scrollbar */
 }
 
 .blog .name{
@@ -109,17 +109,26 @@
     color: rgb(255, 158, 3);
 }
 
+/* Screen sizes for 17inch devices */
+@media all and (max-width: 1366px) {
+    .blog .name{
+        margin-bottom: 10px;
+        margin-top: 3rem;
+    }
+}
+
 /* Screen Sizes for Desktop devices */
 @media (max-width: 1280px) {
     .blog{
-        height: 180vh;
+        height: 330vh;
     }
+    
 }
 
 /* Screen Sizes for Tablets */
 @media (max-width: 768px) {
     .blog{
-        height: 230vh;
+        height: 480vh;
         padding: 0 2rem;
     }
 
@@ -132,7 +141,7 @@
 /* Screen Sizes for Mobile devices */
 @media (max-width: 480px) {
     .blog{
-        height: 435vh;
+        height: 455vh;
         padding: 0 1rem;
         font-size: 10px;
     }

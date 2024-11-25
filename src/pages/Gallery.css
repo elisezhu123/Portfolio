@@ -2,11 +2,11 @@
 .gallery{
     color: white;
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0.454)), url('/13.jpg');
     background-size: cover;
     font-family: 'Ubuntu';
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .gallery h2{
@@ -169,6 +169,7 @@
 
 /* Video Gallery */
 .video-container{
+    height: 80vh;
     padding: 0 4rem;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -196,7 +197,7 @@
     overflow-y: scroll;
     border-radius: 10px;
     padding: 1rem;
-    height: 650px;
+    height: 85%;
 }
 
 .video-list h4{
@@ -222,6 +223,14 @@
 
 .video-list::-webkit-scrollbar-track {
     background: transparent
+}
+
+/* Screen sizes for 17inch devices */
+@media all and (max-width: 1366px) {
+    .gallery h2{
+        margin-bottom: 10px;
+        margin-top: 3rem;
+    }
 }
 
 /* Screen sizes for Desktop devices */

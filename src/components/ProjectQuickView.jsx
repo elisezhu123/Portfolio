@@ -36,7 +36,7 @@ function ProjectQuickView() {
       {/* 6 recent popular project descriptions*/}
       <div className='content'>
         <div className="items active">
-          <h1>Project 1: <br /> IU Cube</h1>
+          <h1>Project1: IU Cube</h1>
           <div className="text">
             <p>
               Through this project, I hope to share the perplexity and excitement of those adolescent years with you. It is more than just a simple webpage. It was a remembrance and a yearning for that period in my life.
@@ -50,7 +50,7 @@ function ProjectQuickView() {
         </div>
 
         <div className="items">
-          <h1>Project 2: <br />The Pearl Girl</h1>
+          <h1>Project2: The Pearl Girl</h1>
           <div className="text">
             <p>
               I recreated the well-known oil painting " The Girl with the Pearl Earring " for this project. I turned the traditional image of the original artwork into a contemporary and amusing cartoon using 3D modeling and rendering technologies with the aid of Blender.
@@ -64,10 +64,10 @@ function ProjectQuickView() {
         </div>
 
         <div className="items">
-          <h1>Project 3: <br /> Healthy Food & Tips </h1>
+          <h1>Project3: Healthy Food & Tips </h1>
           <div className="text">
             <p>
-              This is a graphical user interface for an online platform for ordering food and beverages based on the software Sketch development. Nowadays, many Chinese live overseas. In Western nations, tipping culture is widespread as a trend in the more globalized world. They may find it difficult to adjust to such a society. Also, they may not be familiar with the menu names of Western dishes. Thus, I attempted to create a food ordering application user interface with several main features. 
+              This is a graphical user interface for an online platform for ordering food and beverages based on the software Sketch development. In Western nations, tipping culture is widespread as a trend in the more globalized world. They may find it difficult to adjust to such a society. Thus, I attempted to create a food ordering application user interface with several main features. 
             </p>
           </div>
           <button onClick={() => setI(i + 1)}>
@@ -78,7 +78,7 @@ function ProjectQuickView() {
         </div>
 
         <div className="items">
-          <h1>Project 4:<br /> Foxes in Fireflies Forest</h1>
+          <h1>Project4: Foxes in Fireflies Forest</h1>
           <div className="text">
             <p>
               This is a 3D animation project created in Blender. The project is a short animated film about a fox and a firefly in a forest. The animation is created using Blender's 3D modeling, animation, and rendering tools.It is more than just a piece of work but a passing childhood fancy deeply remembered and cherished. The fox character reminds me of a little civet cat I used to feed in my hometown.
@@ -92,7 +92,7 @@ function ProjectQuickView() {
         </div>
 
         <div className="items">
-          <h1>Project 5: <br /> Fluid Rotation Timeline</h1>
+          <h1>Project5: Fluid Rotation Timeline</h1>
           <div className="text">
             <p>
               This design is a tribute to Bilibili (a social media platform like YouTube having most Chinese followers) and my fans. I will share with you unique and lovely visuals via code programming.
@@ -106,7 +106,7 @@ function ProjectQuickView() {
         </div>
 
         <div className="items">
-          <h1>Project 6: <br /> Collecting Gems</h1>
+          <h1>Project6: Collecting Gems</h1>
           <div className="text">
             <p>
               It is an open-source mini-game to enrich the Mac game ecosystem, for which a player can complete it in a single setting. It is a game that younger kids can play to help them quickly recover from rigorous learning atmosphere and achieve complete relaxation. I also encourage teenagers interested in coding to download and recreate according to their preferences.

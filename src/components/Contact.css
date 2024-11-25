@@ -228,6 +228,14 @@ input:checked ~ .content .right{
     }
     }
 
+/* Screen sizes for 17inch devices */
+@media all and (max-width: 1366px) {
+
+    .contact h2{
+        padding-bottom: 10px;
+        padding-top: 3rem;
+    }
+}
 
 /* Screen sizes for Desktop devices */
 @media all and (max-width: 1280px) { 
