@@ -2,6 +2,7 @@
 import { createSlice, nanoid} from "@reduxjs/toolkit"; // import createSlice  and nanoid from redux toolkit
 import { sub } from "date-fns"; // import the sub function from date-fns
 
+// Define the initial state for the posts
 const initialState = [
     { id : 1, 
       title: "Clean and Modern Design", 
@@ -15,6 +16,7 @@ const initialState = [
             heart: 3,
             coffee: 0
       },
+      image: null,
     },
 
     { id : 2, 
@@ -29,6 +31,7 @@ const initialState = [
             heart: 0,
             coffee: 0
       },
+      image: null,
     },
 
     { id : 3, 
@@ -43,6 +46,7 @@ const initialState = [
             heart: 0,
             coffee: 5
       },
+      image: null,
     },
 
     { id : 4, 
@@ -57,6 +61,7 @@ const initialState = [
             heart: 0,
             coffee: 5
       },
+      image: null,
     },
 
     { id : 5,
@@ -71,6 +76,7 @@ const initialState = [
             heart: 0,
             coffee: 2
       },
+      image: null,
     },
 
     { id : 6,
@@ -84,7 +90,8 @@ const initialState = [
             wow: 0,
             heart: 0,
             coffee: 0
-      }
+      },
+      image: null,
     },
 
     { id : 7,
@@ -98,7 +105,8 @@ const initialState = [
             wow: 0,
             heart: 0,
             coffee: 0
-      }
+      },
+      image: null,
     },
 
     { id : 8,   
@@ -112,7 +120,8 @@ const initialState = [
             wow: 0,
             heart: 0,
             coffee: 0
-      }
+      },
+      image: null,
     },            
 ];
 
@@ -120,34 +129,45 @@ const postsSlice = createSlice({ // create a slice for the posts
   name: "posts", // slice name
   initialState, // initial state
   reducers: {
-    postAdded: {
-      reducer(state, action) {
-        state.push(action.payload);
+    postAdded: { //`postAdded` reducer
+      reducer(state, action) { // reducer function
+        state.push(action.payload); // add the new post to the state
       },
-      prepare(title, content, userId) {
+      prepare(title, content, userId, image) { // prepare function
         return {
-          payload: {
-            id: nanoid(),
-            title,
-            content,
-            date: new Date().toISOString(),
-            userId,
-            reactions: {
+          payload: { // create a payload object
+            id: nanoid(), // generate a unique ID for the post
+            title, // add the title
+            content, // add the content
+            date: new Date().toISOString(), // add the date
+            userId, // add the user ID
+            image, // add the image
+            reactions: { // add the reactions
               thumbsUp: 0,
               thumbsDown: 0,
               wow: 0,
               heart: 0,
               coffee: 0,
             },
+            
           },
         };
       },
     },
-    reactionAdded(state, action) {
-      const { postId, reaction } = action.payload;
-      const existingPost = state.find((post) => post.id === postId);
-      if (existingPost) {
-        existingPost.reactions[reaction]++;
+    postUpdated(state, action) { // create a postUpdated reducer
+      const {id, title, content, image} = action.payload; // get the id, title, content, and image from the payloaduserId from the payload
+      const existingPost = state.find((post) => post.id === id); // find the post with the given id
+      if (existingPost) { // if the post exists
+        existingPost.title = title; // update the title
+        existingPost.content = content; // update the content
+        if (image == undefined ) existingPost.image = image; // update the image if it exists
+      }
+    },
+    reactionAdded(state, action) { // create a reactionAdded reducer
+      const { postId, reaction } = action.payload; // get the postId and reaction from the payload
+      const existingPost = state.find((post) => post.id === postId); // find the post with the given postId
+      if (existingPost) { // if the post exists
+        existingPost.reactions[reaction]++; // increment the reaction count
       }
     },
   },  
@@ -156,8 +176,8 @@ const postsSlice = createSlice({ // create a slice for the posts
 
 export const selectAllPosts = (state) => state.posts; // create a selector to access the posts state
 
-export const {reactionAdded} = postsSlice.actions; // export the reactionAdded action
+export const selectPostById = (state, postId) => state.posts.find((post) => post.id === postId); // create a selector to access a post by its id
 
-export const { postAdded } = postsSlice.actions; // export the addPost action
+export const { postAdded, postUpdated, reactionAdded } = postsSlice.actions; // export the addPost, updatePost, and reactionAdded actions
 
 export default postsSlice.reducer; // export the posts reducer

@@ -130,7 +130,7 @@ function App() {
               <h3>Newsletter</h3>
             </div>
             <form>
-              <input type="email" placeholder="Enter your email" required/>
+              <input id="email" type="email" autoComplete="off" placeholder="Enter your email" required/>
               <button type="submit">
                 <box-icon name='right-arrow-alt' size="20px" color='#ffffff' ></box-icon>
               </button>

@@ -11,7 +11,7 @@ import { reactionAdded } from "./PostSlice.jsx"; // import the reactionAdded act
 const reactionEmoji = {
     thumbsUp: '👍',
     thumbsDown: '👎',
-    wow: '😃',
+    wow: '😮',
     heart: '🥰',
     coffee: '☕'
 }

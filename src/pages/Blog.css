@@ -3,7 +3,7 @@
     color: white;
     width: 100%;
     padding: 0 4rem;
-    height: auto;
+    min-height: 300vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(61, 61, 61, 0.977)), url('/14.jpg');
     background-size: cover;
     box-sizing: border-box;
@@ -117,18 +117,10 @@
     }
 }
 
-/* Screen Sizes for Desktop devices */
-@media (max-width: 1280px) {
-    .blog{
-        height: 330vh;
-    }
-    
-}
-
 /* Screen Sizes for Tablets */
 @media (max-width: 768px) {
     .blog{
-        height: 480vh;
+        height: auto;
         padding: 0 2rem;
     }
 
@@ -141,7 +133,7 @@
 /* Screen Sizes for Mobile devices */
 @media (max-width: 480px) {
     .blog{
-        height: 455vh;
+        height: auto;
         padding: 0 1rem;
         font-size: 10px;
     }
