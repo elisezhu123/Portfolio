@@ -9,6 +9,6 @@ const PostAuthor = ({ userId }) => { // create a PostAuthor component that takes
 
     const author = users.find(user => user.id === userId); // find the user with the matching id 
 
-    return <span>by {author ? author.name : 'Unknown author'}</span>   // return the author's name or 'Unknown author' if the author is not found
+    return <span>by {author ? author.name : 'Anonymous author'}</span>   // return the author's name or 'Unknown author' if the author is not found
 }
 export default PostAuthor   // export the PostAuthor component
