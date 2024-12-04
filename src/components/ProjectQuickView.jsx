@@ -53,7 +53,7 @@ function ProjectQuickView() {
           <h1>Project2: The Pearl Girl</h1>
           <div className="text">
             <p>
-              I recreated the well-known oil painting " The Girl with the Pearl Earring " for this project. I turned the traditional image of the original artwork into a contemporary and amusing cartoon using 3D modeling and rendering technologies with the aid of Blender.
+              I recreated the well-known oil painting " The Girl with the Pearl Earring" in this work. I turned the traditional image of the original artwork into a contemporary and amusing cartoon using Blender for 3D modeling and rendering.
             </p>
           </div>
           <button onClick={() => setI(i + 1)}>
@@ -67,7 +67,7 @@ function ProjectQuickView() {
           <h1>Project3: Healthy Food & Tips </h1>
           <div className="text">
             <p>
-              This is a graphical user interface for an online platform for ordering food and beverages based on the software Sketch development. In Western nations, tipping culture is widespread as a trend in the more globalized world. They may find it difficult to adjust to such a society. Thus, I attempted to create a food ordering application user interface with several main features. 
+              In Western nations, tipping culture us wudespread as a trend in a more globalized world. However, many overseas Chinese may find it challenging to adapt. Thus, I attempted to create this user interface for a food and beverages ordering application using Sketch development tool.
             </p>
           </div>
           <button onClick={() => setI(i + 1)}>
@@ -81,7 +81,7 @@ function ProjectQuickView() {
           <h1>Project4: Foxes in Fireflies Forest</h1>
           <div className="text">
             <p>
-              This is a 3D animation project created in Blender. The project is a short animated film about a fox and a firefly in a forest. The animation is created using Blender's 3D modeling, animation, and rendering tools.It is more than just a piece of work but a passing childhood fancy deeply remembered and cherished. The fox character reminds me of a little civet cat I used to feed in my hometown.
+              This is a short animated film about a family of foxes with a group of fireflies in a forest. The 3D modelling, animation, and rendering of all the characters and environmental elements depended on Blender for design. It is more than just a piece of work but a passing childhood fancy deeply remembered and cherished. The character of the foxes in the animation reminds me of a little civet cat I used to feed in my hometown.
             </p>
           </div>
           <button onClick={() => setI(i + 1)}>
@@ -95,7 +95,7 @@ function ProjectQuickView() {
           <h1>Project5: Fluid Rotation Timeline</h1>
           <div className="text">
             <p>
-              This design is a tribute to Bilibili (a social media platform like YouTube having most Chinese followers) and my fans. I will share with you unique and lovely visuals via code programming.
+              This design is a tribute to Bilibili (a YouTube-like social media platform like YouTube having most Chinese followers) and my fans. I will share unique visuals with yout via code programming.
             </p>
           </div>
           <button onClick={() => setI(i + 1)}> 
@@ -109,7 +109,7 @@ function ProjectQuickView() {
           <h1>Project6: Collecting Gems</h1>
           <div className="text">
             <p>
-              It is an open-source mini-game to enrich the Mac game ecosystem, for which a player can complete it in a single setting. It is a game that younger kids can play to help them quickly recover from rigorous learning atmosphere and achieve complete relaxation. I also encourage teenagers interested in coding to download and recreate according to their preferences.
+            It is an open-source mini-game enriching the Mac game ecosystem, and players can enter the game in a single setting. It is a game adapted to younger kids and can help them quickly recover from a rigorous learning atmosphere and achieve complete relaxation. I also encourage teenagers interested in coding to download and recreate according to their preferences.
             </p>
           </div>
           <button onClick={() => setI(i + 1)}>

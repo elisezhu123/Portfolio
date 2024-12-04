@@ -31,7 +31,7 @@ const Hero = () => {
                             <h2>Ling Xiao Zhu</h2>
                             <p>An interaction Designer</p>
                             <p>
-                                Pursuing A Master degree in Interaction and Experience Design at the University of Limerick.
+                                Pursuing A Master degree in Interaction and Experience Design at the University of Limerick
                             </p>
                         </div>
                     </div>

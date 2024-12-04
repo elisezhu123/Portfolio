@@ -14,7 +14,7 @@ function Experience() {
          <div className="timeline">
             <ul>
                <li>
-                  <h3>Kairos Career Consulting Canada Inc</h3>
+                  <h3>Kairos Career Consulting Canada Inc.</h3>
                   <p>
                      Web Designer
                   </p>
@@ -28,7 +28,7 @@ function Experience() {
                </li>
 
                <li>
-                  <h3>Shenzhen Archforce Distributed Technology Co</h3>
+                  <h3>Shenzhen Archforce Distributed Technology Co.</h3>
                   <p>
                      UI Graphic Designer
                   </p>
@@ -42,7 +42,7 @@ function Experience() {
                </li>
 
                <li>
-                  <h3>Shanghai Pengyuan Network Technology Co</h3>
+                  <h3>Shanghai Pengyuan Network Technology Co.</h3>
                   <p>
                      UI Graphic & Animation Designer
                   </p>

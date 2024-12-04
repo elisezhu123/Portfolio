@@ -29,13 +29,13 @@ function post4() {
           <img className="pic4" src={blog_4} alt="blog4.1" />
           <div className="des">
             <p>
-              In the cozy ambiance of the library cafeteria, we gathered to discuss the topic for our upcoming video project. To spark inspiration, we decided to browse through some YouTube videos, analyzing their storytelling techniques and visual styles. Each clip offered a unique perspective, fueling our excitement and creativity.
+              In the cozy ambiance of the library cafeteria, we gathered to discuss the topic for our upcoming video project. We browsed through some YouTube videos, analyzing their storytelling techniques and visual styles to draw inspiration. Each clip offered a unique perspective, fueling our excitement and creativity.
             </p>
-            <span>Brainstorm the concept :</span>
+            <span>Brainstorm the concept:</span>
             <p>
-              With fresh ideas buzzing in our minds, we opened Figma to brainstorm. Collaboratively, we sketched out rough concepts, focusing on themes that aligned with our goals. This visual approach helped us organize our ideas effectively and decide on a clear direction for the video. Finally, we decided to focus on the commerial product of apple juice.
+              With fresh ideas buzzing in our minds, we opened Figma to brainstorm. We conceived rough ideas together, focusing on themes aligning with our goals. This visual approach helped us organize our ideas effectively and decide on a clear direction for the video. Finally, we decided to focus on the commercial product of apple juice.
             </p>
-            <span>Design the storyboard :</span>
+            <span>Design the storyboard:</span>
             <p>
               With the focus set, we began outlining our approach. The plan includes creating a storyboard in Figma to map out key scenes, designing a catchy tagline, and deciding on visuals that emphasize the freshness and quality of apple juice. This decision marked the beginning of a creative and fun project.
             </p>

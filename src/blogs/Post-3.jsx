@@ -24,15 +24,15 @@ function post3() {
 
           {/* post content*/}
           <h2 className='post-title'>
-            Power and Precision: Protrait of an Aspiration Professional Yourth
+            Power and Precision: Portrait of an Aspirational Professional Youth
           </h2>
           <img className="pic3" src={blog_3} alt="blog3.1" />
           <div className="des">
             <p>
-              The photo was taken in my dorm with the background of a white wall, a space of both reflection and ambition. The simplicity of the white wall behind me serves as the perfect canvas, allowing every detail to shine without distraction. It shows my confidence and authority while wearing a suit. The balanced light and the well-framed composition brings out the contours of my face and the texture of the suit.
+              The photo was taken against a white wall at my dorm, a living and studying space full of reflection and ambition. The simplicity of the white wall behind me serves as the perfect canvas, making every detail clear and brighter with the optical characteristics of reflecting all lights. I selected a formal black suit to let the balanced light bring out the best details of my facial contours and the suit texture. I hope the well-framed compositions will present my confidence and a positive attitude in this first professional photo in life. 
             </p>
             <p>
-              This portrait goes beyong a physical representation, it encaosulates my leadership qualities, but also elegance and charisma. My stance exudes an aura of decisiveness, while my expression hints at the strategic mind that lies beneath. It highlighs the essence of a business elite, embodying power, precision, and unwavering ambition, symbolizing the journey towards excellence and success.
+              Thus, this portrait goes beyond a physical representation. I hope people who watch the photo can find what needs to be encapsulated in a professional lady, such as leadership qualities, elegance and charisma. I wish they could see in my pupils an aura of discernment and decisiveness. The picture symbolizes the future journey toward excellence and success of an occupational female who will grow into an individual with knowledge, inner power, and unwavering ambition.
             </p>
           </div>
 

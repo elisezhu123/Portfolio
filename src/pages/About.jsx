@@ -24,7 +24,7 @@ function About() {
                     As a design practitioner, I keep honing my skills in creating appealing images, websites, and code-editing projects. Furthermore, a successful designer should 
                     also grasp theoretical knowledge about visual concepts, design and research methodology, psychological and cognitive determinants, and ethical issues. A wide 
                     range of reading and community involvement let me acquire this relative knowledge and maintain a high sensitivity to popular ideas and trends in the field.
-                    As a content creator of Little Red Book and Bilibili—two popular social media sites in China, I concentrate on showcasing self-created digital artworks and 
+                    As a content creator of REDnote and Bilibili—two popular social media sites in China, I concentrate on showcasing self-created digital artworks and 
                     teaching software functionalities to people concerning artificial intelligence, digital workflow, macOS games, and keeping board communication with 20000+ 
                     accumulated subscribers through the platform.
                 </p>
@@ -44,7 +44,7 @@ function About() {
                         <li>
                             <span>
                                 <box-icon name='bell' type='solid' color='#fffdfd' ></box-icon>
-                                <p className='list'>Highest Click: <span>30,000+</span></p>
+                                <p className='list'>Max PV/UGC: <span>30,000+</span></p>
                             </span>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@ function About() {
                         <li>
                             <span>
                                 <box-icon name='hand-down' type='solid' color='#fffdfd' ></box-icon>
-                                <p className='list'>Overall Clicks: <span>148,9000+</span></p>
+                                <p className='list'>Overall PV: <span>148,9000+</span></p>
                             </span>
                         </li>
                     </ul>

@@ -34,12 +34,12 @@ function Resume() {
                         <div className="item">
                             <div className="year">2021</div>
                             <div className="content">
-                                <div className="company">Kairos Career Consulting Canada Inc</div>
+                                <div className="company">Kairos Career Consulting Canada Inc.</div>
                                 <div className="job">
                                     Web Designer
                                 </div>
                                 <div className="achivements">
-                                    - Apply interactive animation effects to webpages.<br />
+                                    - Participated in overall website UI/UX design, including logo, webpage layout, and visual effects according to the design specifications.<br />
                                     
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ function Resume() {
                         <div className="item">
                             <div className="year"><span>2024</span></div>
                             <div className="content">
-                                <div className="company">Shenzhen Archforce Distributed Technology Co</div>
+                                <div className="company">Shenzhen Archforce Distributed Technology Co.</div>
                                 <div className="job">
                                     UI Graphic Designer
                                 </div>
@@ -61,13 +61,13 @@ function Resume() {
                         <div className="item">
                             <div className="year"><span>2024</span></div>
                             <div className="content">
-                                <div className="company">Shanghai Pengyuan Network Technology Co</div>
+                                <div className="company">Shanghai Pengyuan Network Technology Co.</div>
                                 <div className="job">
                                     UI Graphic & Animation Designer
                                 </div>
                                 <div className="achivements">
-                                    - Self-built AIGC local servers for ComfyUI and Stable Diffusion<br />
-                                    - Made a Python-based ComfyUI plugin
+                                    - Generated the corresponding AI image series and video animation independently.<br />
+                                    - Wrote a Python-based ComfyUI plugin, built workflows using ComfyUI, and deployed Stable Diffusion locally
                                 </div>
                             </div>
                         </div>

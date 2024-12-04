@@ -92,7 +92,7 @@ function App() {
           {/* column 1 with logo and descriptions */}
           <div className="col">
             <img src={logo} alt="logo" />
-            <p class="des">Subscibe Elise Portfolio Channel to view more projects and click the right icons to link my other websites. </p>
+            <p class="des">Subscribe to Elise's Portfolio Channel to view more projects, or click the right icons icons linking to the respective site pages or my social media sites.</p>
           </div>
 
           {/* column 2 with office address and contact information */}
@@ -161,7 +161,7 @@ function App() {
 
         {/* copy right */}
         <div className="copy-right">
-          <p>Elise Portfolio &copy; 2024 - All rights reserved</p>
+          <p>Elise's Portfolio &copy; 2024 - All rights reserved</p>
         </div>
       </footer> 
     </>

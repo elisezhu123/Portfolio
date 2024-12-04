@@ -24,18 +24,18 @@ function post1() {
 
           {/* post content*/}
           <h2 className='post-title'>
-            Passion in life: Running at Campus Everyday
+            Passion in life: Daily Jogging at Campus
           </h2>
           <img className="pic1" src={blog_1} alt="blog1.1" />
           <div className="des">
             <p>
-              In China, the air feels heavy, laden with smoke and dust, making me struggle in the city. I was always tired and stressed. It limits my connection with nature as I always stay indoors.
+              In China, the air feels heavy, laden with smoke and dust, making me struggle in my hometown -- a bustling industrial hub. I used to be tired and stressed as poor air quality blocked my connection with nature.
             </p>
             <p>
-              However, it is quite different in Ireland. The picture was shot on campus in Ireland. Running in Ireland every morning feels like a breath of fresh air. The lush green landscapes stretch out before me, and the cool breeze brushes against my skin. The air is clean and crisp, and the sky is a clear blue. The sun shines brightly, casting a warm glow over everything. I feel a sense of freedom and joy as if I am connected to nature in a way I never have. I feel like I am truly alive and free.
+              However, it is quite different in Ireland. Roaming on thisland every morning feels like a free bird in the forest. The air is clean and crisp, and the sky is a clear blue. The sun shines brightly, casting a warm glow over everything. The lush green landscapes stretch out before me, and the cool breeze brushes against my skin. I feel a sense of freedom and joy as if embraced by nature in a way I never have. All these make me feel like I am truly alive and free.
             </p>
             <p>
-              Running is more than an exercise; it’s a ritual that helps me find balance and a sense of connection. The freedom I get when I run here stays with me long after I’m done. It reminds me that even in the most polluted places, there’s always the promise of something pure and beautiful waiting to be found.
+              Jogging is more than an exercise; it's a ritual that helps me find balance and peace. The freedom I get when I run here stays with me long after I've done. This snapshot captured a running moment with a cool breeze blowing around me. It reminds me that there's always the promise of something pure and beautiful waiting to be found, even in a polluted world.
             </p>
           </div>
 
