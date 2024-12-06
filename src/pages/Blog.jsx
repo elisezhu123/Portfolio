@@ -44,7 +44,7 @@ function Blog() {
                     <img src={blog1} alt="blog1" />
                     <h3 className="category">Life</h3>
                     <div className="title">
-                        Passion in life: Running at Campus Everyday
+                        Passion in life: Daily Jogging at Campus
                     </div>
                     <span className="date">Oct.3, 2024</span>
                     <p className="brief">
@@ -70,7 +70,7 @@ function Blog() {
                     <img src={blog3} alt="blog3" />
                     <h3 className="category">Life</h3>
                     <div className="title">
-                        Power and Precision: Protait of an Aspiration Professional Youth
+                        Power and Precision: Portait of an Aspirational Professional Youth
                     </div>
                     <span className="date">Oct.3, 2024</span>
                     <p className="brief">
